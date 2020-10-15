@@ -8,7 +8,8 @@ const install = (Vue) => {
             useSubdirectories：是否检索子目录
             regExp: 匹配文件的正则表达式,一般是文件名
     */
-    const requireComponent = require.context('@packages',true,/\.vue$/);
+    
+    const requireComponent = require.context('.',true,/\.vue$/);
     requireComponent.keys().forEach((fileName)=>{
         let config = requireComponent(fileName);
         Vue.component(config.default.name,config.default);
