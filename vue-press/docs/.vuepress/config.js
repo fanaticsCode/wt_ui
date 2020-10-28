@@ -4,11 +4,15 @@ module.exports = {
     dest: './build', // 设置输出目录
     port: 1111, //端口
     themeConfig: { //主题配置
-        nav: [
+        nav: [ // 导航条
             {
-                text: '主页',
+                text: 'demo',
                 link: '/'
-            }, // 导航条
+			},
+			{
+                text: 'ts',
+                link: '/ts_note/test.md'
+            },
         ],
         // 为以下路由添加侧边栏
         sidebar: {
@@ -19,7 +23,15 @@ module.exports = {
                         'button'
                     ]
                 }
-            ]
+            ],
+            '/ts_note/':[
+                {
+                    collapsable: true,
+                    children: [
+                        'test'
+                    ]
+                }
+            ],
         }
     }
 }
