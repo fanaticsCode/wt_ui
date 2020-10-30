@@ -6,24 +6,26 @@
 ## 按钮
 <code-container>
 ::: slot source
-<test-name color="red"></test-name>
-:::
+<wt-button type='info' size="large">按钮</wt-button>
+<wt-button type='danger'>按钮</wt-button>
+<wt-button type='info' size="small">按钮</wt-button>
 
-使用type属性来定义 Button 的样式。
+:::
+使用type属性来定义 Button 的类型'warning','success','danger','info','primary'。<br>
+使用size属性来定义 Button 的大小'large', 'medium', 'small'。
 
 ::: slot highlight
 ```html
-<div>
-    <test-name color="red"></test-name>
-    <test-name color="yellow"></test-name>
-    <test-name color="gray"></test-name>
-</div>
+<template>
+    <wt-button type='info' size="large">按钮</wt-button>
+    <wt-button type='danger'>按钮</wt-button>
+    <wt-button type='info' size="small">按钮</wt-button>
+</template>
 ```
 :::
-
 </code-container>
 <div>
-    <wt-button></wt-button>
+    <wt-button type='info'>按钮</wt-button>
 </div>
 
 

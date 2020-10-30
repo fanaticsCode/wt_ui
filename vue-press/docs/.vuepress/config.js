@@ -6,18 +6,23 @@ module.exports = {
     themeConfig: { //主题配置
         nav: [ // 导航条
             {
-                text: 'demo',
+                text: '主页',
                 link: '/'
 			},
+            {
+                text: 'demo',
+                link: '/components/button'
+            },
 			{
                 text: 'ts',
-                link: '/ts_note/test.md'
+                link: '/ts_note/test'
             },
         ],
         // 为以下路由添加侧边栏
         sidebar: {
             '/components/': [
                 {
+                    title:'组件',
                     collapsable: true,
                     children: [
                         'button'
@@ -26,6 +31,7 @@ module.exports = {
             ],
             '/ts_note/':[
                 {
+                    title:'typeScript',
                     collapsable: true,
                     children: [
                         'test'
