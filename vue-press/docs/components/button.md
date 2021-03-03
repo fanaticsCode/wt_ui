@@ -25,8 +25,8 @@
 :::
 </code-container>
 <div>
-    <wt-button type='info'>按钮</wt-button>
-    <test-name></test-name>
+    <wt-button type='info'>按钮123</wt-button>
+    <wt-button-test></wt-button-test>
 </div>
 
 
